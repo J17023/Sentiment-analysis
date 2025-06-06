@@ -6,14 +6,14 @@ import {
   getToken,
   removeToken,
   isAuthenticated,
-  AuthCredentials,
+  AuthRequest,
 } from "./auth";
 
 // Mocks global fetch
 (globalThis as any).fetch = vi.fn();
 
 const mockToken = "mocked-token";
-const credentials: AuthCredentials = {
+const credentials: AuthRequest = {
   username: "testuser",
   password: "testpassword",
 };
